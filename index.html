@@ -37,7 +37,7 @@
 
     function getData(pageId) {
       console.log(pageId);
-      var myRequest = new Request(pageId + '.txt');
+      var myRequest = new Request('http://newsapi.org/v2/everything?q=bitcoin&from=2020-11-03&sortBy=publishedAt&apiKey=f9ccf5b7fcf54ac899a3531fac446866');
 
       fetch(myRequest)
       .then(function(response) {
